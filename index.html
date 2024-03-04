@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PORTFOILO</title>
+    
+    <link rel="stylesheet" href="style.css">
+  
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+    <div class="bg"></div>
+ 
+    <nav class="navbar">
+        <div class="logo">Portfoilo</div>
+        <div class="menu-item">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <ion-icon name="ios-menu"></ion-icon>
+        </div>
+        <div class="search">
+            <ion-icon name="ios-search"></ion-icon>
+        </div>
+    </nav>
+
+    <div class="media">
+        <ul>
+           <a href=""><li>Telegram</li></a> 
+           <a href=""> <li>Instagram</li> </a> 
+           
+        </ul>
+    </div>
+
+    <div class="img-wrapper">
+        <div class="img"> </div>
+        <div class="block"></div>
+    </div>
+
+   <div class="text">
+       <h1>
+           <span class="text-bar">My name is  <label> Davletov Dilmurad</label></span>
+       </h1>
+       <p>
+           <span class="text-bar">this site is both for me</span>
+       </p>
+   </div>
+
+ 
+</div>
+
+
+
+<div class="container">
+
+</div>
+
+
+    <script>
+       TweenMax.to(".bg", 2,{
+           width:"100%",
+           ease:Expo.easeInOut
+       })
+       TweenMax.from(".navbar", 1.5,  {
+           delay:2.5,
+           opacity:0,
+           y:20,
+           ease:Expo.easeInOut
+       })
+        TweenMax.staggerFrom(".media ul li", 1.5, {
+            delay:2.8,
+            opacity:0,
+            x:-30,
+            ease:Expo.easeInOut
+        }, 0.08)
+      
+
+       TweenMax.from(".text", 4,  {
+           delay:1.6,
+          x:900,
+           ease:Expo.easeInOut
+       })
+
+        TweenMax.from(".bottomnav", 1.5,  {
+           delay:3.2,
+           opacity:0,
+           y:30,
+           ease:Expo.easeInOut
+       })
+       TweenMax.from(".bottomnav .next", 1.5,  {
+           delay:3.5,
+           opacity:0,
+           x:-20,
+           ease:Expo.easeInOut
+       })
+
+
+       
+    </script>
+</body>
+
+</html>
